@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-color: #3DCFB6 #292929
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+:not(dialog) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+@font-face {
+  font-family: FiraCode;
+  src: url("../public/assets/fonts/FiraCode.ttf")
+}
+@font-face {
+  font-family: Karla;
+  src: url("../public/assets/fonts/Karla.ttf")
+}
+.fira {
+  font-family: FiraCode, monospace;
+}
+.karla {
+  font-family: Karla, sans-serif
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}

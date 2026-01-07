@@ -1,0 +1,24 @@
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.logo__initials {
+  color: #3dcfb6;
+  font-size: clamp(1.5rem, 1.4rem + .5vw, 2rem);
+  font-weight: 700;
+  transform: scale(1.2);
+  line-height: .7;
+  transition: color .3s ease-out, -webkit-text-stroke .3s ease-out, -webkit-text-stroke-color .3s ease-out;
+}
+.logo__initials-letter-rotate {
+  transform: rotate(90deg);
+}
+.logo__fullname {
+  color: #fff;
+  font-size: clamp(1.5rem, 1.4rem + .5vw, 2rem);
+  font-weight: 700;
+  transition: color .3s ease-out, -webkit-text-stroke .3s ease-out, -webkit-text-stroke-color .3s ease-out;
+  line-height: .9;
+}
