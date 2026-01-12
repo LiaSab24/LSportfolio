@@ -1,10 +1,6 @@
 footer {
-  background: rgb(108, 104, 104);
+  background: var(--background-color);
   padding: 8.438rem 6rem 4rem;
-/*  padding-bottom: 4rem; 
-  margin-inline: auto;
-  max-width: 1440px;
-  border-top: 2px solid #3DCFB6; */
   width: 100%;
 }
 
@@ -20,7 +16,7 @@ footer {
 }
 
 .logo-container >p {
-  color: #fff;
+  color: var(--text-color);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -28,7 +24,7 @@ footer {
   display: flex;
   gap: .5rem;
   align-items: center;
-  color: #fff;
+  color: var(--text-color);
 }
 
 @media (min-width: 768px) {
@@ -45,10 +41,10 @@ ul {
   list-style: none;
 }
 a:hover {
-  color: #3DCFB6;
+  color: var(--primary-color);
 }
 li a {
-  color: #fff;
+  color: var(--text-color);
   font-size: 1rem;
   font-weight: 400;
   transition: color .3s ease-out;

@@ -1,0 +1,70 @@
+<section class="form-container">
+  <h2>Kontakt Formular</h2>
+  <p class="karla">Lassen Sie uns herausfinden, wie wir <span>IHR</span> Projekt zum <span>Erfolg</span> führen können.</p>
+  
+  <form [formGroup]="personForm" (ngSubmit)="onSubmit()">  
+    <!-- First Name (Type: textfield) -->
+    <div class="form-field">
+      <label for="firstName">First Name</label>
+      <input 
+        id="firstName" 
+        type="text" 
+        formControlName="firstName" 
+        placeholder="Enter your first name"
+      >
+      <!-- Fehleranzeige (Optional aber empfohlen) -->
+      <div class="error" *ngIf="personForm.get('firstName')?.invalid && personForm.get('firstName')?.touched">
+        First Name ist erforderlich.
+      </div>
+    </div>
+
+    <!-- Last Name (Type: textfield) -->
+    <div class="form-field">
+      <label for="lastName">Last Name</label>
+      <input 
+        id="lastName" 
+        type="text" 
+        formControlName="lastName"
+        placeholder="Enter your last name"
+      >
+      <div class="error" *ngIf="personForm.get('lastName')?.invalid && personForm.get('lastName')?.touched">
+        Last Name ist erforderlich.
+      </div>
+    </div>
+
+    <!-- Email (Type: email) -->
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input 
+        id="email" 
+        type="email" 
+        formControlName="email"
+        placeholder="name@example.com"
+      >
+      <div class="error" *ngIf="personForm.get('email')?.invalid && personForm.get('email')?.touched">
+        Bitte eine gültige Email eingeben.
+      </div>
+    </div>
+
+    <!-- Message (Type: textarea) -->
+    <div class="form-field">
+      <label for="message">Message</label>
+      <textarea 
+        id="message" 
+        formControlName="message"
+        placeholder="Ihre Nachricht hier..."
+      ></textarea>
+      <div class="error" *ngIf="personForm.get('message')?.invalid && personForm.get('message')?.touched">
+        Message ist erforderlich.
+      </div>
+    </div>
+
+    <!-- Submit (Type: button) -->
+    <div class="form-actions">
+      <button type="submit" [disabled]="personForm.invalid">
+        Submit
+      </button>
+    </div>
+
+  </form>
+</section>

@@ -1,33 +1,19 @@
 <header>
-  <div>
-    <nav>
-      <ul>
-        <li class="language-btn-container">
-          <button class="fira language-inactive">EN</button>
-          <button  class="fira language-active" disabled="">DE</button>
-        </li>
-        <li>
-          <a fragment="about-me" class="fira" href="#about-me">Über mich</a>
-        </li>
-        <li>
-          <a fragment="skills" class="fira" href="#skills">Skills</a>
-        </li>
-        <li>
-          <a fragment="projects" class="fira" href="#projects">Projekte</a>
-        </li>
-      </ul>
-    </nav>
-   <app-logo>
-      <div class="logo">
-        <div class="logo__initials fira">
-          <div class="logo__initials-letter logo__initials-letter-rotate">L</div>
-          <div class="logo__initials-letter">S</div>
-        </div>
-        <div class="logo__fullname fira">
-          <div class="logo__fullname-firstname">Liane</div>
-          <div class="logo__fullname-lastname">Schmuhl</div>
-        </div>
+  <div class="header">
+    <app-logo></app-logo>
+    <div class="header-content">
+      <nav>
+        <ul>
+          <li><a href="#about-me" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <button class="language-active language-border" disabled="">EN</button>
+        <button class="language-inactive language-border">DE</button>
       </div>
-   </app-logo>
+    </div>
   </div>
 </header>
