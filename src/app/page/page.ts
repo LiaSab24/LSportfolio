@@ -4,11 +4,11 @@ import { AboutMe } from './about-me/about-me';
 import { ContactMe } from './contact-me/contact-me';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-page',
   imports: [Hero, AboutMe, ContactMe],
-  templateUrl: './home.html',
-  styleUrl: './home.scss',
+  templateUrl: './page.html',
+  styleUrl: './page.scss',
 })
-export class Home {
+export class Page {
 
 }

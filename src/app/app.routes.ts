@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { Home } from './home/home';
+import { Page} from './page/page';
 
 export const routes: Routes = [
-  { path: '', component: Home },
+  { path: '', component: Page},
   { path: 'imprint', loadComponent: () => import('./imprint/imprint').then(m => m.Imprint) },
 ];
