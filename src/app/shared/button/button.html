@@ -1,0 +1,8 @@
+<p>button works!</p>
+<!-- 
+  Block: .button
+  Modifier: .button--{{ variant }} (wird z.B. zu .button--default)
+-->
+<button class="button" type="button" aria-label="button" [ngClass]="'button--' + variant">
+  <ng-content></ng-content> <!-- Hier kommt ein Text rein -->
+</button>

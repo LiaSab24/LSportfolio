@@ -1,0 +1,35 @@
+/* BLOCK */
+.button {
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* MODIFIER: Default Variant */
+.button--default {
+  background-color: #70E61C;
+  color: #000;
+}
+
+/* MODIFIER: Highlight Variant */
+.button--highlight {
+  background-color: #ff4757;
+  color: #000;
+}
+
+/* Gilt für alle Varianten, da es am Block hängt */
+.button:hover {
+  background-color: #9747ff;
+  transform: scale(1.05);
+}
+
+.button:active {
+  background-color: #fff;
+  color: #9747ff;
+  border: 1px solid #9747ff;
+}
